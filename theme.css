@@ -1,0 +1,46 @@
+:root {
+
+
+
+    --primary-color-lighter: #f0f0ff;
+    --primary-color-light: #e0e0ff;
+    --primary-color: #6666FF;
+    --primary-color-dark: #5252cc;
+    --primary-color-darker: #3d3d99;
+    --accent-color-lighter: #f0e6fa;
+    --accent-color-light: #d1b3f0;
+    --accent-color: #6600CC;
+    --accent-color-dark: #5200a3;
+    --accent-color-darker: #3d007a;
+    --text-color: #330066;
+    --text-color-light: var(--accent-color-light);
+
+    --gray-color-light: #e0e0e7;
+    --gray-color: #888897;
+    --gray-color-dark: #3f3f46;
+
+
+    --family: 'DM Sans', system-ui, sans-serif;
+}
+
+html, body {
+    font-family: var(--family);
+}
+
+*::selection {
+    background-color: var(--accent-color-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+label,
+input {
+    color: var(--text-color);
+}

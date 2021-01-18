@@ -1,0 +1,412 @@
+@import "../css/theme.css";
+@import "../css/utitlities.css";
+
+body, html, .page {
+    height: 100%;
+}
+
+.overflow-x-scroll::-webkit-scrollbar {
+    height: 4px;
+}
+
+.overflow-x-scroll::-webkit-scrollbar-track {
+    background-color: var(--accent-color-lighter);
+    border-radius: 8px;
+  }
+
+.overflow-x-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color-light);
+    border-radius: 8px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+@media (min-width: 576px) {
+    .page {
+        max-width: 400px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.mb-btn-offset {
+    margin-bottom: 92px;
+    scroll-padding-top: 92px;
+}
+
+.payment-method {
+    border-color: var(--accent-color-lighter)!important;
+    color: var(--text-color);
+    border: 1px solid var(--accent-color-light);
+    border-radius: 8px;
+    padding: .5rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.payment-method .payment-icon > i {
+    font-size: 24px!important;
+    color: var(--accent-color-light);
+}
+
+.payment-method .payment-text > a {
+    color: var(--text-color);
+}
+
+.payment--selected .payment-method {
+    height: 2.8rem;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 32px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.payment-method.payment-method--active {
+    background-color: var(--accent-color-darker);
+    border-color: var(--accent-color-darker)!important;
+}
+
+.payment-method.payment-method--active .payment-icon > i,
+.payment-method.payment-method--active .payment-text > a {
+    color: white!important;
+}
+
+.payment-gateway {
+
+}
+
+.gateway-radio-box > .visually-hidden:checked ~ label > .gateway-radio-item {
+    color: var(--accent-color-darker);
+}
+
+.custom-radio-box > .visually-hidden:checked ~ .custom-radio-item {
+    background-color: var(--accent-color-darker);
+    border-color: var(--accent-color-darker)!important;
+}
+
+.custom-radio-box > .visually-hidden:checked ~ .custom-radio-item > * {
+    color: white!important;
+}
+
+@media (max-width: 575px) {
+    .form-charge {
+        overflow-y: scroll;
+    }
+}
+
+.input-ghost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input-ghost > input {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    flex: 1;
+    text-align: center;
+    font-size: 36px;
+    color: var(--text-color);
+}
+
+.input-ghost input:focus {
+    box-shadow: none;
+    color: var(--text-color);
+}
+
+.input-ghost input::placeholder {
+    color: var(--accent-color-light);
+}
+
+.input-ghost input:not(:placeholder-shown) {
+    color: var(--accent-color);
+}
+
+.input-solid > input {
+    background-color: var(--primary-color-lighter);
+    color: var(--text-color);
+    height: 60px;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    padding: 16px 24px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--primary-color-lighter)!important;
+    transition: all .2s ease;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 32px;
+}
+
+.input-solid > input:hover {
+    background-color: var(--primary-color-light);
+    border-color: var(--primary-color-light)!important;
+}
+
+.input-solid > input:focus {
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--text-color)
+}
+
+.input-solid input::placeholder {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.input-outline > input,
+.input-outline > .input,
+.input-outline > select {
+    color: var(--text-color);
+    height: 60px;
+    outline: none;
+    box-shadow: none;
+    padding: 12px 24px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--accent-color-lighter);
+    transition: all .2s ease;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: transparent;
+    border-radius: 32px;
+    line-height: 1;
+    position: relative;
+}
+
+.input-outline.form-floating>.input select:focus {
+    outline-color: var(--accent-color);
+}
+
+.input-outline > input:focus,
+.input-outline > .input:focus,
+.input-outline > select:focus {
+    box-shadow: none;
+    background-color: transparent;
+    border-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.input-outline > input::placeholder {
+    color: var(--accent-color-light);
+}
+
+/* bootstrap form-floating overwrites */
+.input-outline.form-floating {
+
+}
+
+.input-outline.form-floating>.form-control,
+.input-outline.form-floating>.form-select  {
+    padding: 12px 24px;
+    height: 60px;
+}
+
+.input-outline.form-floating > label {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--accent-color-light);
+    padding: 12px 24px;
+    transition: all .1s ease;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+}
+
+.input-outline.form-floating>.input~label,
+.input-outline.form-floating>.form-control:focus~label,
+.input-outline.form-floating>.form-control:not(:placeholder-shown)~label,
+.input-outline.form-floating>.form-select~label {
+    transform: scale(.75) translateY(-.85rem) translateX(2.3rem);
+    background: #fff;
+    opacity: 1;
+    padding: 0 8px;
+    height: initial;
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: 32px;
+    font-weight: bold;
+    height: 60px;
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-color-dark);
+    color: #fff;
+}
+
+.btn.btn-accent:disabled {
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+.btn-outline-theme-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.helper-text {
+    color: var(--accent-color-light);
+    font-size: 18px;
+}
+
+.accent-title {
+    color: var(--accent-color);
+    font-size: 36px;
+}
+
+.drawer {
+    position: fixed;
+    inset: 0;
+    visibility: hidden;
+}
+
+.drawer--open {
+
+}
+
+.drawer--open > .drawer-content {
+    transform: translateY(0);
+    box-shadow: 0 -16px 128px rgba(0,0,0,.2);
+    visibility: visible;
+}
+
+.drawer--open > .drawer__backdrop {
+    opacity: 0.6;
+    visibility: visible;
+    will-change: opacity;
+    transition: opacity .2s ease-in-out;
+}
+
+.drawer__backdrop{
+    background-color: #000;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all .2s ease;
+    will-change: opacity;
+}
+
+.drawer-content {
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    z-index: 0;
+    transition: all .2s ease;
+}
+
+.share-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+    position: relative;
+}
+
+.share-btn:active {
+    transform: scale(0.9);
+}
+
+.share-btn:hover {
+    opacity: 0.8;
+}
+
+.share-btn > a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.toast-container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#cpToClipboardToast {
+    padding: 8px 12px;
+    position: relative;
+    border-radius: 32px;
+}
+
+@media (min-width: 576px) {
+    .toast-container {
+        top: 0;
+        max-width: 320px;
+    }
+}
+
+#cpToClipboardToast input {
+    background-color: transparent;
+    outline:none;
+    box-shadow: none;
+    border: none;
+    flex: 1;
+    color: #fff;
+}
+
+#cpToClipboardToast input::selection {
+    background-color: rgba(255,255,255,.1);
+}
+
+#cpToClipboardToast button {
+    border-radius: 16px;
+    font-size: 12px;
+    color: var(--text-color);
+    background-color: white;
+    padding: 4px;
+    border: none;
+    padding: 4px 12px;
+    position: absolute;
+    right: 0;
+    margin: 8px;
+    font-weight: 500;
+}
+
+#cpToClipboardToast button:active,
+#cpToClipboardToast button:focus {
+    border: none;
+    outline: none;
+}
+
+#cpToClipboardToast button:active {
+    transform: scale(0.9);
+}
+

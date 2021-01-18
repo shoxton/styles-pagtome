@@ -1,0 +1,263 @@
+.fs-0 {
+    font-size: calc(2.475rem + 1.425vw)!important;
+}
+
+.fw-normal {
+    font-weight: 400!important;
+}
+
+.fw-medium {
+    font-weight: 500!important;
+}
+
+.fw-bold {
+    font-weight: 700!important;
+}
+
+.text-theme {
+    color: var(--text-color);
+}
+
+.text-theme-light {
+    color: var(--text-color-light);
+}
+
+.text-theme-accent {
+    color: var(--accent-color);
+}
+
+.bg-theme-accent-dark {
+    background-color: var(--accent-color-dark);
+}
+
+.bg-theme-accent-darker {
+    background-color: var(--accent-color-darker);
+}
+
+.bg-theme-accent {
+    background-color: var(--accent-color);
+}
+
+.bg-theme-accent-light {
+    background-color: var(--accent-color-light);
+}
+
+.bg-theme-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-theme-primary-lighter {
+    background-color: var(--primary-color-lighter);
+}
+
+.gradient-theme-accent {
+    background: linear-gradient(50deg, var(--accent-color) 20%, var(--accent-color-darker) 80%);
+}
+
+.border-theme-accent-darkdark {
+    border-color: var(--accent-color-dark)!important;
+}
+
+.border-theme-accent-darker {
+    border-color: var(--accent-color-darker)!important;
+}
+
+.border-theme-accent-light {
+    border-color: var(--accent-color-light)!important;
+}
+
+.border-theme-accent-lighter {
+    border-color: var(--accent-color-lighter)!important;
+}
+
+.border-theme-primary-lighter {
+    border-color: var(--primary-color-lighter)!important;
+}
+
+.border-white-50 {
+    border-color: rgba(255,255,255,.5)!important;
+}
+
+.border-white-25 {
+    border-color: rgba(255,255,255,.25)!important;
+}
+
+.rounded-theme-1 {
+    border-radius: 4px;
+}
+
+.rounded-theme-2 {
+    border-radius: 8px;
+}
+
+.rounded-theme-3 {
+    border-radius: 16px;
+}
+
+.rounded-theme-4 {
+    border-radius: 32px;
+}
+
+.rounded-theme-5 {
+    border-radius: 64px;
+}
+
+.rounded-top-0 {
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+}
+
+.rounded-bottom-0 {
+    border-bottom-left-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+
+.rounded-start-0 {
+   border-top-left-radius: 0!important;
+   border-bottom-left-radius: 0!important;
+}
+
+.rounded-end-0 {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+
+.-ms-2 {
+    margin-left: -2px;
+}
+
+.target-zindex-2:focus {
+    z-index: 2;
+}
+
+.zindex-fixed {
+    z-index: 1030;
+}
+
+.zindex-tooltip {
+    z-index: 1070;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23330066' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+@media (max-width: 575px) {
+    .position-sm-fixed {
+        position: fixed;
+    }
+
+    .overflow-y-scroll-sm {
+        overflow-y: scroll;
+        scroll-padding-bottom: 92px;
+    }
+}
+
+@media (min-width: 576px) {
+    .hover-theme-accent-lighter {
+        transition: all .2s ease;
+    }
+
+    .hover-theme-accent-lighter:hover {
+        background-color: var(--accent-color-lighter);
+    }
+
+    .h-md-initial {
+        height: initial!important;
+    }
+
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.cc-invalid-2x {
+    width: 40px; height: 26px;
+    background: url('/img/creditcards/invalid-2x.svg');
+}
+
+.cc-default-2x {
+    width: 40px; height: 26px;
+    background: url('/img/creditcards/default-2x.svg');
+    opacity: 0.5;
+}
+
+.cc-dinersclub-2x {
+    width: 40px; height: 26px;
+    background: url('/img/creditcards/dinersclub-2x.svg');
+}
+
+.cc-elo-2x {
+    width: 40px; height: 26px;
+    background: url('/img/creditcards/elo-2x.svg');
+}
+
+.cc-mastercard-2x, .cc-master-2x {
+    width: 40px; height: 26px;
+    background: url('/img/creditcards/mastercard-2x.svg');
+}
+
+.cc-visa-2x {
+    width: 40px; height: 26px;
+    background: url('/img/creditcards/visa-2x.svg');
+}
+
+.cc-american-express-2x, .cc-amex-2x {
+    width: 40px; height: 26px;
+    background: url('/img/creditcards/amex-2x.svg');
+}
+
+.cc-invalid-3x {
+    width: 60px; height: 38px;
+    background: url('/img/creditcards/invalid-3x.svg');
+}
+
+.cc-default-3x {
+    width: 60px; height: 38px;
+    background: url('/img/creditcards/default-3x.svg');
+    opacity: 0.5;
+}
+
+.cc-dinersclub-3x {
+    width: 60px; height: 38px;
+    background: url('/img/creditcards/dinersclub-3x.svg');
+}
+
+.cc-elo-3x {
+    width: 60px; height: 38px;
+    background: url('/img/creditcards/elo-3x.svg');
+}
+
+.cc-mastercard-3x, .cc-master-3x {
+    width: 60px; height: 38px;
+    background: url('/img/creditcards/mastercard-3x.svg');
+}
+
+.cc-visa-3x {
+    width: 60px; height: 38px;
+    background: url('/img/creditcards/visa-3x.svg');
+}
+
+.cc-american-express-3x, .cc-amex-3x {
+    width: 60px; height: 38px;
+    background: url('/img/creditcards/amex-3x.svg');
+}
