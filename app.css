@@ -1,5 +1,5 @@
-@import "../css/theme.css";
-@import "../css/utitlities.css";
+@import "./theme.css";
+@import "./utitlities.css";
 
 body, html, .page {
     height: 100%;
