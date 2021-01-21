@@ -5,6 +5,10 @@ body, html, .page {
     height: 100%;
 }
 
+input, textarea {
+    caret-color: var(--accent-color);
+}
+
 .overflow-x-scroll::-webkit-scrollbar {
     height: 4px;
 }
@@ -185,6 +189,7 @@ body, html, .page {
 
 .input-outline > input,
 .input-outline > .input,
+.input-outline > textarea,
 .input-outline > select {
     color: var(--text-color);
     height: 60px;
@@ -209,6 +214,7 @@ body, html, .page {
 
 .input-outline > input:focus,
 .input-outline > .input:focus,
+.input-outline > textarea:focus,
 .input-outline > select:focus {
     box-shadow: none;
     background-color: transparent;
@@ -216,7 +222,8 @@ body, html, .page {
     color: var(--text-color);
 }
 
-.input-outline > input::placeholder {
+.input-outline > input::placeholder,
+.input-outline > textarea::placeholder {
     color: var(--accent-color-light);
 }
 
@@ -251,6 +258,8 @@ body, html, .page {
     opacity: 1;
     padding: 0 8px;
     height: initial;
+    right: initial!important;
+    left: initial!important;
 }
 
 .btn-accent {

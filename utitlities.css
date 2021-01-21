@@ -15,39 +15,39 @@
 }
 
 .text-theme {
-    color: var(--text-color);
+    color: var(--text-color)!important;
 }
 
 .text-theme-light {
-    color: var(--text-color-light);
+    color: var(--text-color-light)!important;
 }
 
 .text-theme-accent {
-    color: var(--accent-color);
+    color: var(--accent-color)!important;
 }
 
 .bg-theme-accent-dark {
-    background-color: var(--accent-color-dark);
+    background-color: var(--accent-color-dark)!important;
 }
 
 .bg-theme-accent-darker {
-    background-color: var(--accent-color-darker);
+    background-color: var(--accent-color-darker)!important;
 }
 
 .bg-theme-accent {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color)!important;
 }
 
 .bg-theme-accent-light {
-    background-color: var(--accent-color-light);
+    background-color: var(--accent-color-light)!important;
 }
 
 .bg-theme-primary {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color)!important;
 }
 
 .bg-theme-primary-lighter {
-    background-color: var(--primary-color-lighter);
+    background-color: var(--primary-color-lighter)!important;
 }
 
 .gradient-theme-accent {
